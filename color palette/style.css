@@ -1,6 +1,13 @@
-body {
+* {
     background-color: #B23635;
     font-size: 20vh;
     text-align: center;
     margin-top: 30vh;
+}
+box {
+    border: 15px solid black;
+    border-radius: 30px;
+    width: 150px;
+    /* ntm nathan */
+    height: 100px;
 }
