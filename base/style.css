@@ -1,0 +1,16 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background: #0004094b;
+}
+h1 {
+  font-family: fantasy;
+  text-align: center;
+  font-size: 80px;
+  color: #5c0606;
+}
+#boxtitre {
+  border: black;
+  border-radius: 20px, 0px, 20px, 0px;
+}
