@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#image {
+    object-fit: cover;
+    display: block;
+    
+    image-rendering: auto;
+    height: 50vh;
+}
+
+.top {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    border-style: solid;
+    color: black;
+    border: white;
+    border-radius: 5vh;
+    background-color: rgba(255, 255, 255, 0.692);
+    font-size: larger;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#newsTitle {
+    border-style: solid;
+    border: black;
+    padding: 5vh;
+    border-radius: 5vh;
+    width: fit-content;
+}
+
+
+#post {
+    margin-left: 5vw;
+    margin-bottom: 10vh;
+    border-radius: 3vh;
+    padding: 3vh;
+    margin: 1vw;
+    border-style: solid;
+}
