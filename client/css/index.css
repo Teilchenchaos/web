@@ -30,7 +30,7 @@ body {
   border-image:
     radial-gradient(rgb(1, 0, 2),
       rgba(0, 0, 0, 0)) 1 1%;
-
+    background-color: #e0c29f;
 }
 
 #leftPart {
@@ -46,7 +46,7 @@ body {
 .leftPart-button {
   border-radius: 5vh;
   border-style: solid;
-  background-color: rgb(121, 30, 173);
+  background-color: #95c4de;
   color: white;
   font-family: ConcertOne-Regular;
   font-size: large;
@@ -54,7 +54,7 @@ body {
   height: 8vh;
   width: 8vw;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.459) 0px 5px 5px 0px;
+  box-shadow: -12px 12px 2px 1px #b6aee84f;
 }
 
 .leftPart-button:hover {
@@ -64,14 +64,15 @@ body {
 @keyframes leftPart-button-keyframes {
   50% {
     transform: scale(115%);
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    box-shadow: #b6aee84f -5px 5px, #b6aee83d -10px 10px, #b6aee828 -15px 15px, #b6aee815 -20px 20px, #b6aee802 -25px 25px;
   }
 
-  90% {
+  85% {
     transform: scale(101%);
   }
 
-  100% {
+  95% {
+    box-shadow: none;
     transform: scale(400%);
   }
 }
