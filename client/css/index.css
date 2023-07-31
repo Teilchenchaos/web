@@ -25,12 +25,11 @@ body {
 }
 
 #rightPart-particles {
-  width: 100%;
-  border-bottom-style: solid;
-  border-image:
-    radial-gradient(rgb(1, 0, 2),
-      rgba(0, 0, 0, 0)) 1 1%;
+    margin-top: 2vh;
+    width: 100%;
     background-color: #e0c29f;
+    border-radius: 5vh;
+    padding: 1vh;
 }
 
 #leftPart {
