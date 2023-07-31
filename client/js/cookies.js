@@ -1,4 +1,4 @@
-let cookiesConsent = getCookie("cookiesConsent")
+var cookiesConsent = getCookie("cookiesConsent")
 //add the cookies banner if the cookie "cookiesConsent" doesn't exist
 window.onload = function(){
     if(cookiesConsent == "") {
