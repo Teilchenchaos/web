@@ -1,9 +1,3 @@
-body {
-    background-image: url(../files/background.jpg);
-    background-position: center;
-    background-size: cover;
-}
-
 #cookies {
     margin-top: 10vh;
     display: flex;
