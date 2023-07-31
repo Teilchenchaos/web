@@ -6,7 +6,6 @@ var Electron = 0
 document.getElementById("particles-electron").innerHTML = document.getElementById("particles-electron").innerHTML + Electron
 
 loop = setInterval(() => {
-    console.log("test")
     let randomquark = Math.floor((Math.random() * 3) + 1);
     if (randomquark === 1) {
       Up = Up + 1;

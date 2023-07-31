@@ -22,5 +22,9 @@ h1 {
   display: block;
 }
 #objects {
-  
+  margin-top: 3%;
+  margin-left: 2%;
+  border: 3px solid pink;
+  width: 20%;
+  font-size: 0.8rem;
 }
