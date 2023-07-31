@@ -3,11 +3,10 @@
   src: url(../files/ConcertOne-Regular.ttf);
 }
 
-* {
-  margin: 0px;
+body {
   font-family: ConcertOne-Regular, Arial, sans-serif;
 }
-#particles {
+#rightPart-particles {
   margin-top: 3%;
   margin-right: 2%;
   border: 3px solid black;

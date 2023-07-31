@@ -5,22 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TeilchenChaos</title>
   <link rel="icon" href="files/logo-color.png">
+
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/cookies.css">
+  <link rel="stylesheet" href="css/craft.css">
+
   <script src="js/cookies.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/craft.js"></script>
 </head>
 <body>
   <h1 id="title">TeilchenChaos</h1>
-  <div id="particles">
-    <h3 id="particles-title">*Particles* :</h3>
-    <h4 id="particles-up">*Up* : </h4>
-    <h4 id="particles-down">*Down* : </h4>
-    <h4 id="particles-electron">*Electron* : </h4>
+  <div id="leftPart">
+    <div id="leftPart-buttons">
+        <h3>*Your atoms* : <button id="leftPart-buttons-craft" onclick="showCraftMenu()">Craft</button></h3>
+      </div>
   </div>
-  <div id="objects">
-    <h3>*Your atoms* : <button id="zone-craft" onclick="location.href = 'craft.html'">Craft</button></h3>
+  <div id="middlePart">
+    
   </div>
-  <script src="js/index.js"></script>
-  <script src="js/craft.js"></script>
+  <div id="rightPart">
+    <div id="rightPart-particles">
+        <h3 id="rightPart-particles-title">*Particles* :</h3>
+        <h4 id="rightPart-particles-up">*Up* : </h4>
+        <h4 id="rightPart-particles-down">*Down* : </h4>
+        <h4 id="rightPart-particles-electron">*Electron* : </h4>
+      </div>
+  </div>
 </body>
 </html>
