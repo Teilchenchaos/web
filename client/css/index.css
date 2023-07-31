@@ -12,58 +12,79 @@ body {
 }
 
 #middlePart-title {
-    text-align: center;
-    font-size: 3em;
+  text-align: center;
+  font-size: 3em;
 }
 
 #rightPart {
-    border-left-style: solid;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    
+  border-left-style: solid;
+  padding-left: 2vw;
+  padding-right: 2vw;
+
 }
 
 #rightPart-particles {
-    width: 100%;
-    border-bottom-style: solid;
-    border-image: 
-    radial-gradient( 
-      rgb(1, 0, 2), 
-      rgba(0, 0, 0, 0)
-    ) 1 1%;
+  width: 100%;
+  border-bottom-style: solid;
+  border-image:
+    radial-gradient(rgb(1, 0, 2),
+      rgba(0, 0, 0, 0)) 1 1%;
 
 }
 
 #leftPart {
-    padding-left: 2vw;
-    border-right-style: solid;
-    padding-right: 2vw;
+  padding-left: 2vw;
+  border-right-style: solid;
+  padding-right: 2vw;
 }
 
 #leftPart-buttons {
-    margin-top: 5vh;
+  margin-top: 5vh;
 }
 
 .leftPart-button {
-    border-radius: 5vh;
-    border-style: solid;
-    background-color: rgb(121, 30, 173);
-    color: white;
-    font-family: ConcertOne-Regular;
-    font-size: large;
-    padding: 1.5vh;
-    height: 8vh;
-    width: 8vw;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.459) 0px 5px 5px 0px;
+  border-radius: 5vh;
+  border-style: solid;
+  background-color: rgb(121, 30, 173);
+  color: white;
+  font-family: ConcertOne-Regular;
+  font-size: large;
+  padding: 1.5vh;
+  height: 8vh;
+  width: 8vw;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.459) 0px 5px 5px 0px;
 }
 
 .leftPart-button:hover {
-    animation: leftPart-button-keyframes 5s infinite;
+  animation: leftPart-button-keyframes 5s infinite;
 }
 
-@keyframes leftPart-button-keyframes {    
-    50% {transform: scale(115%);box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;}
-    90% {transform: scale(101%);}
-    100% {transform: scale(400%);}
+@keyframes leftPart-button-keyframes {
+  50% {
+    transform: scale(115%);
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+  }
+
+  90% {
+    transform: scale(101%);
+  }
+
+  100% {
+    transform: scale(400%);
+  }
+}
+
+#middlePart {
+  width: 70%;
+}
+
+#Craft-menu {
+  border: 3px solid black;
+  margin: 0px;
+  height: 50%;
+}
+
+#Craft-title {
+  text-align: center;
 }
