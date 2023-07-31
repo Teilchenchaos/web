@@ -18,3 +18,7 @@ loop = setInterval(() => {
       document.getElementById("particles-electron").innerHTML = (document.getElementById("particles-electron").innerHTML).split(":")[0] + ": " + Electron
     }
 }, 5000);
+
+zonecraft.addEventListner("click", () => {
+  location.replace("craft.html")
+})
