@@ -57,7 +57,7 @@ body {
 }
 
 .leftPart-button:hover {
-  animation: leftPart-button-keyframes 15s infinite;
+  animation: leftPart-button-keyframes 10s infinite;
 }
 
 @keyframes leftPart-button-keyframes {
