@@ -1,14 +1,6 @@
-let Up = 0
-let Down = 0
-let Electron = 0
-
-setInterval(() => {
-  let randomquark = Math.floor((Math.random() * 3) + 1);
-  if (randomquark === 1) {
-    Up = Up + 1;
-  } else if(randomquark === 2) {
-    Down = Down + 1;
-  } else {
-    Electron = Electron + 1;
-  }
-}, 2000);
+var Up = 0
+document.getElementById("particles-up").innerHTML = document.getElementById("particles-up").innerHTML + Up
+var Down = 0
+document.getElementById("particles-down").innerHTML = document.getElementById("particles-down").innerHTML + Down
+var Electron = 0
+document.getElementById("particles-electron").innerHTML = document.getElementById("particles-electron").innerHTML + Electron
