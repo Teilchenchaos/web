@@ -4,26 +4,55 @@
 }
 
 body {
-  font-family: ConcertOne-Regular, Arial, sans-serif;
+  font-family: ConcertOne-Regular, Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  height: 100vh;
 }
-#rightPart-particles {
-  margin-top: 3%;
-  margin-right: 2%;
-  border: 3px solid black;
-  font-size: 0.8rem;
-  width: 15%;
-  float: right;
+
+#middlePart-title {
+    text-align: center;
+    font-size: 3em;
 }
-h1 {
-  text-align: center;
-  font-family: ConcertOne-Regular, Arial, sans-serif;
-  font-size: 2.5rem;
-  display: block;
+
+#rightPart {
+    margin-right: 2vw;
+    border-left-style: solid;
+    padding-left: 3vh;
 }
-#objects {
-  margin-top: 3%;
-  margin-left: 2%;
-  border: 3px solid black;
-  width: 20%;
-  font-size: 0.8rem;
+
+#leftPart {
+    margin-left: 2vw;
+    border-right-style: solid;
+    padding-right: 3vh;
+}
+
+#leftPart-buttons {
+    margin-top: 5vh;
+}
+
+.leftPart-button {
+    border-radius: 5vh;
+    border-style: solid;
+    background-color: rgb(121, 30, 173);
+    color: white;
+    font-family: ConcertOne-Regular;
+    font-size: large;
+    padding: 1.5vh;
+    height: 8vh;
+    width: 8vw;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.459) 0px 5px 5px 0px;
+}
+
+.leftPart-button:hover {
+    
+    animation: leftPart-button-keyframes 5s infinite;
+}
+
+@keyframes leftPart-button-keyframes {    
+    50% {transform: scale(115%);box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;}
+    90% {transform: scale(101%);}
+    100% {transform: scale(400%);}
 }
