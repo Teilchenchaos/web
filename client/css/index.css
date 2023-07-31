@@ -1,0 +1,30 @@
+@font-face {
+  font-family: ConcertOne-Regular;
+  src: url(../files/ConcertOne-Regular.ttf);
+}
+
+* {
+  margin: 0px;
+  font-family: ConcertOne-Regular, Arial, sans-serif;
+}
+#particles {
+  margin-top: 3%;
+  margin-right: 2%;
+  border: 3px solid black;
+  font-size: 0.8rem;
+  width: 15%;
+  float: right;
+}
+h1 {
+  text-align: center;
+  font-family: ConcertOne-Regular, Arial, sans-serif;
+  font-size: 2.5rem;
+  display: block;
+}
+#objects {
+  margin-top: 3%;
+  margin-left: 2%;
+  border: 3px solid black;
+  width: 20%;
+  font-size: 0.8rem;
+}
