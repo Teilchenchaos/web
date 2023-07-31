@@ -76,15 +76,20 @@ body {
 }
 
 #middlePart {
-  width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%
 }
 
-#Craft-menu {
-  border: 3px solid black;
-  margin: 0px;
-  height: 50%;
+#middlePart-iframe {
+    width: 90%; 
+    height: 90%;
+    display: flex;
+    flex-direction: column;
 }
 
-#Craft-title {
-  text-align: center;
+#middlePart-iframe-iframe {
+    border: solid;
+    height: 90%;
 }
