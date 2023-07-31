@@ -17,15 +17,27 @@ body {
 }
 
 #rightPart {
-    margin-right: 2vw;
     border-left-style: solid;
-    padding-left: 3vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    
+}
+
+#rightPart-particles {
+    width: 100%;
+    border-bottom-style: solid;
+    border-image: 
+    radial-gradient( 
+      rgb(1, 0, 2), 
+      rgba(0, 0, 0, 0)
+    ) 1 1%;
+
 }
 
 #leftPart {
-    margin-left: 2vw;
+    padding-left: 2vw;
     border-right-style: solid;
-    padding-right: 3vh;
+    padding-right: 2vw;
 }
 
 #leftPart-buttons {
@@ -47,7 +59,6 @@ body {
 }
 
 .leftPart-button:hover {
-    
     animation: leftPart-button-keyframes 5s infinite;
 }
 
