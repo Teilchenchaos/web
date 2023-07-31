@@ -17,4 +17,4 @@ loop = setInterval(() => {
       Electron = Electron + 1;
       document.getElementById("particles-electron").innerHTML = (document.getElementById("particles-electron").innerHTML).split(":")[0] + ": " + Electron
     }
-}, 2*1000);
+}, 5000);
