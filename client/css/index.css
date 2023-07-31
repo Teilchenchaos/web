@@ -25,11 +25,11 @@ body {
 }
 
 #rightPart-particles {
-    margin-top: 2vh;
-    width: 100%;
-    background-color: #e0c29f;
-    border-radius: 5vh;
-    padding: 1vh;
+  margin-top: 2vh;
+  width: 100%;
+  background-color: #e0c29f;
+  border-radius: 5vh;
+  padding: 1vh;
 }
 
 #leftPart {
@@ -57,7 +57,7 @@ body {
 }
 
 .leftPart-button:hover {
-  animation: leftPart-button-keyframes 5s infinite;
+  animation: leftPart-button-keyframes 15s infinite;
 }
 
 @keyframes leftPart-button-keyframes {
