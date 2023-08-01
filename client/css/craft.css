@@ -1,0 +1,95 @@
+#middlePart-iframe-iframe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#craft-title {
+    text-align: center;
+    border-bottom: solid;
+    padding-bottom: 3vh;
+    width: 100%;
+    margin: 0;
+    margin-top: 2vh;
+}
+
+#craft-nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-bottom: solid;
+}
+
+.craft-nav {
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+    border: solid;
+    color: black;
+    padding: 1vh;
+    text-decoration: none;
+}
+
+
+
+
+/*DON'T TOUCH THIS PART, YOU COULD MAKE IT WORSE*/
+#craftTableParticle-1 {
+  position: absolute;
+  height: 15vh;
+  width: 15vh;
+  border-radius: 100vh;
+  transform: translateX(50%);
+  border: solid;
+  right: 50%;
+  top: 35%;
+  cursor: pointer;
+  background-color: #ebbeb9;
+  font-size: large;
+}
+
+#craftTableParticle-2 {
+  position: absolute;
+  height: 15vh;
+  width: 15vh;
+  border-radius: 100vh;
+  transform: translateX(-50%);
+  border: solid;
+  left: 40.3%;
+  top: 55%;
+  cursor: pointer;
+  background-color: #ebbeb9;
+  font-size: large;
+}
+
+#craftTableParticle-3 {
+  position: absolute;
+  height: 15vh;
+  width: 15vh;
+  border-radius: 100vh;
+  transform: translateX(50%);
+  border: solid;
+  right: 40.5%;
+  top: 55%;
+  cursor: pointer;
+  background-color: #ebbeb9;
+  font-size: large;
+}
+
+/*after that, you can touch it*/
+
+#craftTableParticle-button {
+    border-radius: 5vh;
+    border-style: solid;
+    background-color: #95c4de;
+    color: white;
+    font-family: ConcertOne-Regular;
+    font-size: large;
+    padding: 1.5vh;
+    height: 8vh;
+    width: 8vw;
+    cursor: pointer;
+    box-shadow: -1vw 1vh 0.2vw 0.1vh #b6aee84f;
+    margin-top: 43vh;
+}

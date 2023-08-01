@@ -1,13 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TeilchenChaos - Craft</title>
-</head>
-<body>
-    <script>
-        console.log(document.cookie)
-    </script>
-</body>
-</html>
+<h1 id="craft-title">Craft</h1>
+<nav id="craft-nav">
+    <a href="javascript:alert('hello')" id="craft-nav-particles" class="craft-nav">Particles</a>
+    <a href="javascript:alert('hello')" id="craft-nav-atoms" class="craft-nav">Atoms</a>
+    <a href="javascript:alert('hello')" id="craft-nav-molecules" class="craft-nav">Molecules</a>
+</nav>
+<div id="craftTableParticle">
+    <button id="craftTableParticle-button" onclick="craftParticle()">Craft !</button>
+    <button id="craftTableParticle-1" onclick="insertParticle(1)"></button>
+    <button id="craftTableParticle-2" onclick="insertParticle(2)"></button>
+    <button id="craftTableParticle-3" onclick="insertParticle(3)"></button>
+    
+</div>
+<script src="js/craft.js"></script>
+<link rel="stylesheet" href="css/craft.css">

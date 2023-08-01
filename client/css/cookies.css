@@ -23,11 +23,12 @@
 #cookies-button {
     font-family: sans-serif;
     margin-top: 3vh;
-    background-color: yellow;
-    height: 5vh;
-    width: 10vw;
-    border-radius: 3vh;
+    background-color: #95c4de;
+    height: 8vh;
+    width: 8vw;
+    border-radius: 5vh;
     border-style: solid;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    box-shadow: -12px 12px 2px 1px #b6aee84f;
     cursor: pointer;
+    
 }
