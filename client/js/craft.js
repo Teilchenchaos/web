@@ -28,7 +28,7 @@ function craftParticle() {
         }
     }
     if(quarksPlacement == 1) {
-        if(Game.particles.up < 1 || Game.particles.up < 2) {
+        if(Game.particles.down < 2 || Game.particles.up < 1) {
             document.getElementById("craftTableParticle").innerHTML += `<div class='dialog' id="dialog"><h3>You don't have enough quarks.</h3><button class='dialog-button' onclick='document.getElementById("dialog").remove()'>Ok</button></div>`
             return 0;
         }
@@ -38,7 +38,7 @@ function craftParticle() {
         document.getElementById("rightPart-particles-neutron").innerHTML = (document.getElementById("rightPart-particles-neutron").innerHTML).split(":")[0] + ": " + Game.particles.neutron
     }
     else if(quarksPlacement == 2) {
-        if(Game.particles.up < 2 || Game.particles.up < 1) {
+        if(Game.particles.down < 2 || Game.particles.up < 1) {
             document.getElementById("craftTableParticle").innerHTML += `<div class='dialog' id="dialog"><h3>You don't have enough quarks.</h3><button class='dialog-button' onclick='document.getElementById("dialog").remove()'>Ok</button></div>`
             return 0;
         }
