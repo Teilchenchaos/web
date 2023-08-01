@@ -116,10 +116,10 @@
   height: 15vh;
   width: 15vh;
   transform: translateX(-50%);
-  left: 40.3%;
+  left: 60%;
   top: 55%;
   cursor: pointer;
-  background-color: #ebbeb9;
+  background-color: white;
   font-size: large;
 }
 
@@ -130,9 +130,35 @@
   height: 15vh;
   width: 15vh;
   transform: translateX(-50%);
-  left: 40.3%;
+  left: 30%;
   top: 55%;
   cursor: pointer;
-  background-color: #ebbeb9;
+  background-color: white;
   font-size: large;
+}
+
+#craftTableAtoms-3 {
+  position: absolute;
+  border: solid;
+  border-radius: 100vh;
+  height: 5vh;
+  width: 5vh;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 50%;
+  cursor: pointer;
+  background-color: white;
+  font-size: large;
+}
+
+#craftTableAtoms {
+  height: 100%;
+  display: flex;
+}
+
+h3 {
+  margin: 0;
+  text-align: left;
+  margin-top: 1vh;
+  margin-left: 1vh;
 }

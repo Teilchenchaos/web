@@ -82,9 +82,10 @@ function clearParticlecraftTableParticle() {
 
 function atomsCraftMenu() {
     craftTableParticle.style.display = "none"
-
+    craftTableAtoms.style.display = "block"
 }
 
 function particlesCraftMenu() {
     craftTableParticle.style.display = "block"
+    craftTableAtoms.style.display = "none"
 }
