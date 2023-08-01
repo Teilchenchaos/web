@@ -96,3 +96,16 @@ body {
   border-radius: 15px;
   height: 90%;
 }
+
+.dialog {
+    position: fixed;
+    text-align: center;
+    transform: translate(-50%, 100%);
+    background-color: #e0c29f;
+    padding: 2vh;
+    border-radius: 4vh;
+}
+
+.dialog-button {
+    padding: 2vh;
+}

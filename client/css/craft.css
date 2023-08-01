@@ -35,7 +35,7 @@
 
 
 /*DON'T TOUCH THIS PART, YOU COULD MAKE IT WORSE*/
-#craftTable-upCraft {
+#craftTable-1 {
   position: absolute;
   height: 15vh;
   width: 15vh;
@@ -44,9 +44,10 @@
   border: solid;
   right: 50%;
   top: 35%;
+  cursor: pointer;
 }
 
-#craftTable-downLeftCraft {
+#craftTable-2 {
   position: absolute;
   height: 15vh;
   width: 15vh;
@@ -55,9 +56,10 @@
   border: solid;
   left: 40.3%;
   top: 55%;
+  cursor: pointer;
 }
 
-#craftTable-downRightCraft {
+#craftTable-3 {
   position: absolute;
   height: 15vh;
   width: 15vh;
@@ -66,6 +68,7 @@
   border: solid;
   right: 40.5%;
   top: 55%;
+  cursor: pointer;
 }
 
 /*after that, you can touch it*/
