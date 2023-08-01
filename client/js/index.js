@@ -2,7 +2,9 @@ var Game = {
     "particles": {
         "up" : 0,
         "down" : 0,
-        "electron" : 0 
+        "electron" : 0,
+        "proton" : 0,
+        "neutron" : 0
     }
 }
 
@@ -11,6 +13,8 @@ window.onload = function() {
     document.getElementById("rightPart-particles-up").innerHTML = document.getElementById("rightPart-particles-up").innerHTML + Game.particles.up
     document.getElementById("rightPart-particles-down").innerHTML = document.getElementById("rightPart-particles-down").innerHTML + Game.particles.down
     document.getElementById("rightPart-particles-electron").innerHTML = document.getElementById("rightPart-particles-electron").innerHTML + Game.particles.electron
+    document.getElementById("rightPart-particles-proton").innerHTML = document.getElementById("rightPart-particles-proton").innerHTML + Game.particles.proton
+    document.getElementById("rightPart-particles-neutron").innerHTML = document.getElementById("rightPart-particles-neutron").innerHTML + Game.particles.neutron
 }
 
 
