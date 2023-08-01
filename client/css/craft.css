@@ -35,7 +35,7 @@
 
 
 /*DON'T TOUCH THIS PART, YOU COULD MAKE IT WORSE*/
-#craftTable-1 {
+#craftTableParticle-1 {
   position: absolute;
   height: 15vh;
   width: 15vh;
@@ -45,9 +45,11 @@
   right: 50%;
   top: 35%;
   cursor: pointer;
+  background-color: #ebbeb9;
+  font-size: large;
 }
 
-#craftTable-2 {
+#craftTableParticle-2 {
   position: absolute;
   height: 15vh;
   width: 15vh;
@@ -57,9 +59,11 @@
   left: 40.3%;
   top: 55%;
   cursor: pointer;
+  background-color: #ebbeb9;
+  font-size: large;
 }
 
-#craftTable-3 {
+#craftTableParticle-3 {
   position: absolute;
   height: 15vh;
   width: 15vh;
@@ -69,6 +73,23 @@
   right: 40.5%;
   top: 55%;
   cursor: pointer;
+  background-color: #ebbeb9;
+  font-size: large;
 }
 
 /*after that, you can touch it*/
+
+#craftTableParticle-button {
+    border-radius: 5vh;
+    border-style: solid;
+    background-color: #95c4de;
+    color: white;
+    font-family: ConcertOne-Regular;
+    font-size: large;
+    padding: 1.5vh;
+    height: 8vh;
+    width: 8vw;
+    cursor: pointer;
+    box-shadow: -1vw 1vh 0.2vw 0.1vh #b6aee84f;
+    margin-top: 43vh;
+}
