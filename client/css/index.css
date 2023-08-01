@@ -30,6 +30,7 @@ body {
   background-color: #e0c29f;
   border-radius: 5vh;
   padding: 1vh;
+  box-shadow: -12px 12px 2px 1px #b6aee84f;
 }
 
 #leftPart {

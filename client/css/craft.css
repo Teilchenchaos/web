@@ -1,55 +1,54 @@
-#body {
+#middlePart-iframe-iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
 }
 
-#craft-title-menu {
-  text-align: center;
-  margin: 0;
-  border-bottom: solid;
+#craft-title {
+    text-align: center;
+    border-bottom: solid;
+    padding-bottom: 3vh;
+    width: 100%;
 }
 
-#up-craft {
+
+
+
+
+
+/*DON'T TOUCH THIS PART, YOU COULD MAKE IT WORSE*/
+#craftTable-upCraft {
   position: absolute;
-  height: 70px;
-  width: 70px;
-  border-radius: 50px;
+  height: 15vh;
+  width: 15vh;
+  border-radius: 100vh;
   transform: translateX(50%);
   border: solid;
   right: 50%;
   top: 35%;
 }
 
-#down-left-craft {
+#craftTable-downLeftCraft {
   position: absolute;
-  height: 70px;
-  width: 70px;
-  border-radius: 50px;
+  height: 15vh;
+  width: 15vh;
+  border-radius: 100vh;
   transform: translateX(-50%);
   border: solid;
-  left: 42.5vw;
+  left: 40.3%;
   top: 55%;
 }
 
-#down-right-craft {
+#craftTable-downRightCraft {
   position: absolute;
-  height: 70px;
-  width: 70px;
-  border-radius: 50px;
+  height: 15vh;
+  width: 15vh;
+  border-radius: 100vh;
   transform: translateX(50%);
   border: solid;
-  right: 42.5vw;
+  right: 40.5%;
   top: 55%;
 }
 
-@media screen and (max-width=900px) {
-  #down-left-craft {
-    left: 25vw;
-  }
-
-  #down-right-craft {
-    right: 25vw;
-  }
-}
+/*after that, you can touch it*/
