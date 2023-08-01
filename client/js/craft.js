@@ -81,11 +81,11 @@ function clearParticlecraftTableParticle() {
 }
 
 function atomsCraftMenu() {
-    craftTableParticle.style.visibility = "hidden"
-    craftTableAtoms.style.visibility = "visible"
+    craftTableParticle.style.display = "none"
+    craftTableAtoms.style.display = "block"
 }
 
 function particlesCraftMenu() {
-    craftTableParticle.style.visibility = "visible"
-    craftTableAtoms.style.visibility = "hidden"
+    craftTableParticle.style.display = "block"
+    craftTableAtoms.style.display = "none"
 }

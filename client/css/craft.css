@@ -106,7 +106,7 @@
 }
 
 #craftTableAtoms {
-    visibility: hidden;
+  display: none;
 }
 
 #craftTableAtoms-table-1 {
@@ -153,12 +153,16 @@
 
 #craftTableAtoms {
   height: 100%;
-  display: flex;
 }
 
-#craftTableAtoms-table {
-    margin: 0;
-    text-align: left;
-    margin-top: 1vh;
-    margin-left: 1vh;
+h3 {
+  margin: 0;
+  text-align: left;
+  margin-top: 1vh;
+  margin-left: 1vh;
+}
+
+#craftTableAtoms-insertYourParticles {
+  float: left;
+  height: 100%;
 }
