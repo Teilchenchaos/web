@@ -107,5 +107,10 @@ body {
 }
 
 .dialog-button {
-    padding: 2vh;
+    padding: 1vh;
+    background-color: #95c4de;
+    border-radius: 2vh;
+    border: solid #95c4de;
+    margin: 0.5vw;
+    cursor: pointer;
 }
