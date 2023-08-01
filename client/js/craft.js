@@ -38,7 +38,7 @@ function craftParticle() {
         document.getElementById("rightPart-particles-neutron").innerHTML = (document.getElementById("rightPart-particles-neutron").innerHTML).split(":")[0] + ": " + Game.particles.neutron
     }
     else if (quarksPlacement == 2) {
-        if (Game.particles.down < 2 || Game.particles.up < 1) {
+        if (Game.particles.down < 1 || Game.particles.up < 2) {
             document.getElementById("craftTableParticle").innerHTML += `<div class='dialog' id="dialog"><h3>You don't have enough quarks.</h3><button class='dialog-button' onclick='document.getElementById("dialog").remove()'>Ok</button></div>`
             return 0;
         }
@@ -81,11 +81,11 @@ function clearParticlecraftTableParticle() {
 }
 
 function atomsCraftMenu() {
-    craftTableParticle.style.display = "none"
-    craftTableAtoms.style.display = "block"
+    craftTableParticle.style.visibility = "hidden"
+    craftTableAtoms.style.visibility = "visible"
 }
 
 function particlesCraftMenu() {
-    craftTableParticle.style.display = "block"
-    craftTableAtoms.style.display = "none"
+    craftTableParticle.style.visibility = "visible"
+    craftTableAtoms.style.visibility = "hidden"
 }

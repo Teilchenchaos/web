@@ -106,10 +106,10 @@
 }
 
 #craftTableAtoms {
-  display: none;
+    visibility: hidden;
 }
 
-#craftTableAtoms-1 {
+#craftTableAtoms-table-1 {
   position: absolute;
   border: solid;
   border-radius: 100vh;
@@ -123,7 +123,7 @@
   font-size: large;
 }
 
-#craftTableAtoms-2 {
+#craftTableAtoms-table-2 {
   position: absolute;
   border: solid;
   border-radius: 100vh;
@@ -137,7 +137,7 @@
   font-size: large;
 }
 
-#craftTableAtoms-3 {
+#craftTableAtoms-table-3 {
   position: absolute;
   border: solid;
   border-radius: 100vh;
@@ -156,9 +156,9 @@
   display: flex;
 }
 
-h3 {
-  margin: 0;
-  text-align: left;
-  margin-top: 1vh;
-  margin-left: 1vh;
+#craftTableAtoms-table {
+    margin: 0;
+    text-align: left;
+    margin-top: 1vh;
+    margin-left: 1vh;
 }
