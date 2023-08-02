@@ -166,3 +166,25 @@
 h3 {
   font-size: 2.5vh;
 }
+
+#titleCraftSpace {
+  border: none;
+  padding: 0;
+}
+
+#cancelCraftButton {
+  position: absolute;
+  height: 5vh;
+  width: 5vh;
+  border: solid;
+  border-radius: 50vh;
+  right: 1.7%;
+  top: 1.7%;
+  cursor: pointer;
+  font-size: 2vh;
+  background: white;
+}
+
+#cancelCraftButton:hover {
+  background: rgba(230, 230, 230, 0.516);
+}
