@@ -107,6 +107,8 @@
 
 #craftTableAtoms {
   display: none;
+  height: 100%;
+  width: 100%;
 }
 
 #craftTableAtoms-table-1 {
@@ -151,18 +153,15 @@
   font-size: large;
 }
 
-#craftTableAtoms {
-  height: 100%;
-}
-
-h3 {
+/* Don't touch this I made it completely random but it works */
+#craftTableAtoms-insertYourParticles {
+  float: left;
+  border-right: solid;
+  padding-right: 1vw;
   margin: 0;
   text-align: left;
   margin-top: 1vh;
-  margin-left: 1vh;
+  margin-left: 1vw;
 }
 
-#craftTableAtoms-insertYourParticles {
-  float: left;
-  height: 100%;
-}
+#craftTableAtoms-table {}
