@@ -41,5 +41,6 @@ function showCraftMenu() {
 function showPeriodicTableMenu() {
     fetch("periodicTable.html").then(data => data.text()).then(data => {
         document.getElementById('middlePart-iframe').innerHTML = `<div id="middlePart-iframe-iframe">${data}</div>`
+        loadPeriodicTable()
     })
 }
