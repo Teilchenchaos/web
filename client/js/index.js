@@ -1,14 +1,14 @@
 var Game = {
     "particles": {
-        "up" : 0,
-        "down" : 0,
-        "electron" : 0,
-        "proton" : 0,
-        "neutron" : 0
+        "up": 0,
+        "down": 0,
+        "electron": 0,
+        "proton": 0,
+        "neutron": 0
     }
 }
 
-window.onload = function() {
+window.onload = function () {
     //add the particles amounts to the screens on the right spot
     document.getElementById("rightPart-particles-up").innerHTML = document.getElementById("rightPart-particles-up").innerHTML + Game.particles.up
     document.getElementById("rightPart-particles-down").innerHTML = document.getElementById("rightPart-particles-down").innerHTML + Game.particles.down
@@ -23,19 +23,23 @@ loop = setInterval(() => {
     let randomquark = Math.floor((Math.random() * 3) + 1);
     if (randomquark === 1) {
         Game.particles.up = Game.particles.up + 1;
-      document.getElementById("rightPart-particles-up").innerHTML = (document.getElementById("rightPart-particles-up").innerHTML).split(":")[0] + ": " + Game.particles.up
-    } else if(randomquark === 2) {
+        document.getElementById("rightPart-particles-up").innerHTML = (document.getElementById("rightPart-particles-up").innerHTML).split(":")[0] + ": " + Game.particles.up
+    } else if (randomquark === 2) {
         Game.particles.down = Game.particles.down + 1;
-      document.getElementById("rightPart-particles-down").innerHTML = (document.getElementById("rightPart-particles-down").innerHTML).split(":")[0] + ": " + Game.particles.down
+        document.getElementById("rightPart-particles-down").innerHTML = (document.getElementById("rightPart-particles-down").innerHTML).split(":")[0] + ": " + Game.particles.down
     } else {
         Game.particles.electron = Game.particles.electron + 1;
-      document.getElementById("rightPart-particles-electron").innerHTML = (document.getElementById("rightPart-particles-electron").innerHTML).split(":")[0] + ": " + Game.particles.electron
+        document.getElementById("rightPart-particles-electron").innerHTML = (document.getElementById("rightPart-particles-electron").innerHTML).split(":")[0] + ": " + Game.particles.electron
     }
-}, 5*1000);
+}, 10 * 1000);
 
 function showCraftMenu() {
     fetch("craft.html").then(data => data.text()).then(data => {
         document.getElementById('middlePart-iframe').innerHTML = `<div id="middlePart-iframe-iframe">${data}</div>`
     })
-    
+
+}
+
+function putIndexPage() {
+    document.getElementById("middlePart-iframe").innerHTML = ""
 }
