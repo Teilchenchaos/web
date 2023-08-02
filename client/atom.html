@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atom - infos</title>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <div id="modelViewer"></div>
+    <p id="description"></p>
+
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+    <style></style>
+    <script>
+        fetch("files/periodicTable.json").then(data => data.json()).then(data => {
+            let number = location.search.replace("?m=", "")
+            let atom = data["elements"][number]
+            console.log(atom)
+            document.getElementById("title").innerHTML = atom["name"]
+            document.getElementById("modelViewer").innerHTML = `<model-viewer src="${atom["bohr_model_3d"]}" alt="a 3d model of the atom" auto-rotate camera-controls poster="${atom["bohr_model_image"]}" id="modelViewer-model"></model-viewer>`
+            document.getElementById("description").innerHTML = `${atom["summary"]}`
+        })
+    </script>
+</body>
+</html>
