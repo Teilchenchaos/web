@@ -1,9 +1,3 @@
-function cancelCraftTable() {
-    fetch("index.html").then(data => data.text()).then(data => {
-        document.getElementById('middlePart-iframe').innerHTML = `<div id="middlePart-iframe-iframe">${data}</div>`
-    })
-}
-
 function insertParticle(position) {
     if (document.getElementById(`craftTableParticle-${position}`).innerHTML != "") {
         document.getElementById(`craftTableParticle-${position}`).innerHTML = ""

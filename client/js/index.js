@@ -39,3 +39,7 @@ function showCraftMenu() {
     })
 
 }
+
+function putIndexPage() {
+    document.getElementById("middlePart-iframe").innerHTML = ""
+}
