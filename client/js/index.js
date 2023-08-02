@@ -8,6 +8,13 @@ var Game = {
     }
 }
 
+var hydrogen = 0
+var helium = 0
+var lithium = 0
+var beryllium = 0
+var boron = 0
+var carbon = 0
+
 window.onload = function () {
     //add the particles amounts to the screens on the right spot
     document.getElementById("rightPart-particles-up").innerHTML = document.getElementById("rightPart-particles-up").innerHTML + Game.particles.up

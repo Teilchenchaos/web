@@ -32,6 +32,16 @@ body {
   box-shadow: -1vw 1vh 0.2vw 0.1vh #b6aee84f;
 }
 
+#rightPart-atoms {
+  display: none;
+  margin-top: 2vh;
+  width: 100%;
+  background: #e0c29f;
+  border-radius: 5vh;
+  padding: 1vh;
+  box-shadow: -1vw 1vh 0.2vw 0.1vh #b6aee84f;
+}
+
 #leftPart {
   padding-left: 2vw;
   border-right-style: solid;
@@ -97,22 +107,22 @@ body {
 }
 
 .dialog {
-    position: fixed;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 60vh;
-    background-color: #e0c29f;
-    padding: 5vh;
-    border-radius: 4vh;
-    box-shadow: -5vw 5vh 0.2vw 0.1vh #b6aee84f;
+  position: fixed;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 60vh;
+  background-color: #e0c29f;
+  padding: 5vh;
+  border-radius: 4vh;
+  box-shadow: -5vw 5vh 0.2vw 0.1vh #b6aee84f;
 }
 
 .dialog-button {
-    padding: 1vh;
-    background-color: #95c4de;
-    border-radius: 2vh;
-    border: solid #95c4de;
-    margin: 0.5vw;
-    cursor: pointer;
+  padding: 1vh;
+  background-color: #95c4de;
+  border-radius: 2vh;
+  border: solid #95c4de;
+  margin: 0.5vw;
+  cursor: pointer;
 }
