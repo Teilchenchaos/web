@@ -188,3 +188,87 @@ h3 {
 #cancelCraftButton:hover {
   background: rgba(230, 230, 230, 0.516);
 }
+
+#craftTableAtoms-minusProton {
+  background: white;
+  font-size: 2vh;
+  height: 4vh;
+  width: 4vh;
+  border: solid;
+  border-radius: 5vh;
+  cursor: pointer;
+}
+
+#craftTableAtoms-minusProton:hover {
+  background: rgba(230, 230, 230, 0.516);
+}
+
+#craftTableAtoms-plusProton {
+  background: white;
+  font-size: 2vh;
+  height: 4vh;
+  width: 4vh;
+  border: solid;
+  border-radius: 5vh;
+  cursor: pointer;
+}
+
+#craftTableAtoms-plusProton:hover {
+  background: rgba(230, 230, 230, 0.516);
+}
+
+#craftTableAtoms-minusNeutron {
+  background: white;
+  font-size: 2vh;
+  height: 4vh;
+  width: 4vh;
+  border: solid;
+  border-radius: 5vh;
+  cursor: pointer;
+}
+
+#craftTableAtoms-minusNeutron:hover {
+  background: rgba(230, 230, 230, 0.516);
+}
+
+#craftTableAtoms-plusNeutron {
+  background: white;
+  font-size: 2vh;
+  height: 4vh;
+  width: 4vh;
+  border: solid;
+  border-radius: 5vh;
+  cursor: pointer;
+}
+
+#craftTableAtoms-plusNeutron:hover {
+  background: rgba(230, 230, 230, 0.516);
+}
+
+#craftTableAtoms-minusElectron {
+  background: white;
+  font-size: 2vh;
+  height: 4vh;
+  width: 4vh;
+  border: solid;
+  border-radius: 5vh;
+  cursor: pointer;
+}
+
+#craftTableAtoms-minusElectron:hover {
+  background: rgba(230, 230, 230, 0.516);
+}
+
+#craftTableAtoms-plusElectron {
+  background: white;
+  font-size: 2vh;
+  height: 4vh;
+  width: 4vh;
+  border: solid;
+  border-radius: 5vh;
+  cursor: pointer;
+}
+
+#craftTableAtoms-plusElectron:hover {
+  background: rgba(230, 230, 230, 0.516);
+}
