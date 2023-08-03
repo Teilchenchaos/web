@@ -7,23 +7,69 @@
 </head>
 <body>
     <h1 id="title"></h1>
-    <div id="modelViewer"></div>
-    <p id="description"></p>
-    <div id="square">
-        <p id="square-top" class="square"></p>
-        <p id="square-middle"></p>
-        <p id="square-bottom"></p>
+    <div id="middle">
+        <div id="middle-div">
+            <p id="description"></p>
+            <div id="square">
+                <p id="square-top" class="square"></p>
+                <p id="square-middle"></p>
+                <p id="square-bottom"></p>
+            </div>
+        </div>
+        <div id="modelViewer"></div>
+
     </div>
+    <img src="" alt="" id="image">
+    <p id="imageBy">Image by </p>
+    <div id="data">
+        <h2>Data :</h2>
+    </div>
+
 
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
     <style>
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #title {
+            margin-top: 10vh;
+            text-align: center;
+            margin-bottom: 10vh;
+        }
+
+        #middle {
+            height: 40vh;
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+        }
+
+        #modelViewer {
+            height: 100%;
+            border: solid;
+            width: 100%;
+            margin-left: 3vw;
+        }
+            
         #square {
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: space-evenly;
             width: 20vh;
             height: 20vh;
             border: solid;
+        }
+
+        #data {
+            margin-top: 10vh;
+        }
+
+        #image {
+            width: 60vw;
+            margin-top: 7vh;
         }
     </style>
     <script>
@@ -32,7 +78,7 @@
             let atom = data["elements"][number]
             console.log(atom)
             document.getElementById("title").innerHTML = atom["name"]
-            document.getElementById("modelViewer").innerHTML = `<model-viewer src="${atom["bohr_model_3d"]}" alt="a 3d model of the atom" auto-rotate camera-controls poster="${atom["bohr_model_image"]}" id="modelViewer-model"></model-viewer>`
+            document.getElementById("modelViewer").innerHTML = `<model-viewer src="${atom["bohr_model_3d"]}" alt="a 3d model of the atom" auto-rotate camera-controls poster="${atom["bohr_model_image"]}" id="modelViewer-model" style="height:100%; width:100%;"></model-viewer>`
             document.getElementById("description").innerHTML = `${atom["summary"]}`
             document.getElementById("square-top").innerHTML = `${atom["number"]} &nbsp; &nbsp; ${atom["atomic_mass"]}`
             document.getElementById("square-middle").innerHTML = `${atom["symbol"]}`
@@ -65,6 +111,10 @@
             else if(atom["category"] == "lanthanide") {
                 document.getElementById(`square`).style.backgroundColor = "#fdfeff"
             }
+            document.getElementById("image").src = atom["image"]["url"]
+            document.getElementById("image").setAttribute("alt", atom["image"]["title"]);
+            document.getElementById("imageBy").innerHTML += atom["image"]["attribution"]
+            document.getElementById("data").innerHTML += `<p>Number : ${atom["number"]}</p> <p>Atomic mass : ${atom["atomic_mass"]}</p> <p>Boiling temperature (kelvin) : ${atom["boil"]}</p> <p>Discovered by ${atom["discovered_by"]}</p> <p>Named by ${atom["named_by"]}</p> <p>Density (kg/m³) : ${atom["density"]}</p><p>wikipedia : <a href="${atom["source"]}">${atom["source"]}</a></p>`
         })
     </script>
 </body>
