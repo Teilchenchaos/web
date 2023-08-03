@@ -1,6 +1,5 @@
 #periodicTable-title {
     text-align: center;
-    border-bottom: solid;
     padding-bottom: 3vh;
     width: 100%;
     margin: 0;
@@ -49,4 +48,27 @@
 
 #periodicTable-element-none {
     visibility: hidden; 
+    visibility: hidden;    
+}
+
+#cancelPeriodicTableCraftButton {
+    height: 5vh;
+    width: 5vh;
+    margin-right: 1.8%;
+    margin-top: 1%;
+    border: solid;
+    border-radius: 50vh;
+    cursor: pointer;
+    font-size: 2vh;
+    background: white;
+}
+  
+#cancelPeriodicTableButton:hover {
+    background: rgba(230, 230, 230, 0.516);
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid;
 }
