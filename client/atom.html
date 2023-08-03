@@ -9,18 +9,62 @@
     <h1 id="title"></h1>
     <div id="modelViewer"></div>
     <p id="description"></p>
-
+    <div id="square">
+        <p id="square-top" class="square"></p>
+        <p id="square-middle"></p>
+        <p id="square-bottom"></p>
+    </div>
 
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
-    <style></style>
+    <style>
+        #square {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20vh;
+            height: 20vh;
+            border: solid;
+        }
+    </style>
     <script>
         fetch("files/periodicTable.json").then(data => data.json()).then(data => {
-            let number = location.search.replace("?m=", "")
+            let number = location.search.replace("?a=", "")
             let atom = data["elements"][number]
             console.log(atom)
             document.getElementById("title").innerHTML = atom["name"]
             document.getElementById("modelViewer").innerHTML = `<model-viewer src="${atom["bohr_model_3d"]}" alt="a 3d model of the atom" auto-rotate camera-controls poster="${atom["bohr_model_image"]}" id="modelViewer-model"></model-viewer>`
             document.getElementById("description").innerHTML = `${atom["summary"]}`
+            document.getElementById("square-top").innerHTML = `${atom["number"]} &nbsp; &nbsp; ${atom["atomic_mass"]}`
+            document.getElementById("square-middle").innerHTML = `${atom["symbol"]}`
+            document.getElementById("square-bottom").innerHTML = `${atom["name"]}`
+
+            if(atom["category"] == "diatomic nonmetal" || atom["category"] == "polyatomic nonmetal") {
+                document.getElementById(`square`).style.backgroundColor = "#e2eeff"
+            }
+            else if(atom["category"] == "alkali metal" ) {
+                document.getElementById(`square`).style.backgroundColor = "#d8f8ff"
+            }
+            else if(atom["category"] == "alkaline earth metal") {
+                document.getElementById(`square`).style.backgroundColor = "#ffe7e7"
+            }
+            else if(atom["category"] == "metalloid") {
+                document.getElementById(`square`).style.backgroundColor = "#fef7e0"
+            }
+            else if(atom["category"] == "actinide") {
+                document.getElementById(`square`).style.backgroundColor = "#ffe6d4"
+            }
+            else if(atom["category"] == "transition metal") {
+                document.getElementById(`square`).style.backgroundColor = "#f3e8fd"
+            }
+            else if(atom["category"] == "noble gas") {
+                document.getElementById(`square`).style.backgroundColor = "#ffe7eb"
+            }
+            else if(atom["category"] == "post-transition metal") {
+                document.getElementById(`square`).style.backgroundColor = "#d6f9e8"
+            }
+            else if(atom["category"] == "lanthanide") {
+                document.getElementById(`square`).style.backgroundColor = "#fdfeff"
+            }
         })
     </script>
 </body>
