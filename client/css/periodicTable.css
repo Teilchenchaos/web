@@ -47,6 +47,7 @@
 }
 
 #periodicTable-element-none {
+    visibility: hidden; 
     visibility: hidden;    
 }
 

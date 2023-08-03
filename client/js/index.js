@@ -45,6 +45,7 @@ function showPeriodicTableMenu() {
     })
 }
 
+
 function putIndexPage() {
     document.getElementById("middlePart-iframe").innerHTML = ""
 }
