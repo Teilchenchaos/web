@@ -89,3 +89,42 @@ function particlesCraftMenu() {
     craftTableParticle.style.display = "block"
     craftTableAtoms.style.display = "none"
 }
+
+function changeParticlesPosition(whatToChange) {
+    if(whatToChange == "-p") {
+        if(parseInt(document.getElementById("craftTableAtoms-table-1").innerHTML.split(": ")[1]) == 0) {
+            return 0;
+        }
+        let particleNumber = parseInt(document.getElementById("craftTableAtoms-table-1").innerHTML.split(": ")[1]) - 1
+        document.getElementById("craftTableAtoms-table-1").innerHTML = `Protons : ${particleNumber}`
+    } else if(whatToChange == "+p") {
+        let particleNumber = parseInt(document.getElementById("craftTableAtoms-table-1").innerHTML.split(": ")[1]) + 1
+        document.getElementById("craftTableAtoms-table-1").innerHTML = `Protons : ${particleNumber}`
+    } 
+    else if(whatToChange == "-n") {
+        if(parseInt(document.getElementById("craftTableAtoms-table-2").innerHTML.split(": ")[1]) == 0) {
+            return 0;
+        }
+        let particleNumber = parseInt(document.getElementById("craftTableAtoms-table-2").innerHTML.split(": ")[1]) - 1
+        document.getElementById("craftTableAtoms-table-2").innerHTML = `Neutrons : ${particleNumber}`
+    } else if(whatToChange == "+n") {
+        let particleNumber = parseInt(document.getElementById("craftTableAtoms-table-2").innerHTML.split(": ")[1]) + 1
+        document.getElementById("craftTableAtoms-table-2").innerHTML = `Neutrons : ${particleNumber}`
+    } 
+    else if(whatToChange == "-e") {
+        if(parseInt(document.getElementById("craftTableAtoms-table-3").innerHTML.split(": ")[1]) == 0) {
+            return 0;
+        }
+        let particleNumber = parseInt(document.getElementById("craftTableAtoms-table-3").innerHTML.split(": ")[1]) - 1
+        document.getElementById("craftTableAtoms-table-3").innerHTML = `Electrons : ${particleNumber}`
+    } else if(whatToChange == "+e") {
+        let particleNumber = parseInt(document.getElementById("craftTableAtoms-table-3").innerHTML.split(": ")[1]) + 1
+        document.getElementById("craftTableAtoms-table-3").innerHTML = `Electrons : ${particleNumber}`
+    }
+}
+
+function craftAtom() {
+    let protons = parseInt(document.getElementById("craftTableAtoms-table-1").innerHTML.split(": ")[1])
+    let neutrons = parseInt(document.getElementById("craftTableAtoms-table-2").innerHTML.split(": ")[1])
+    let electrons = parseInt(document.getElementById("craftTableAtoms-table-3").innerHTML.split(": ")[1])
+}
