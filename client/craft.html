@@ -16,14 +16,27 @@
         <h3>Insert your particles :</h3>
         <div id="craftTableAtoms-insertYourProtonNeutronElectron">
             <h4 id="craftTableAtoms-insertYourProton">Protons :</h4>
+            <div>
+                <button id="craftTableAtoms-minusProton" onclick="changeParticlesPosition('-p')">-</button>
+                <button id="craftTableAtoms-plusProton" onclick="changeParticlesPosition('+p')">+</button>
+            </div>
             <h4 id="craftTableAtoms-insertYourNeutron">Neutron :</h4>
+            <div>
+                <button id="craftTableAtoms-minusNeutron" onclick="changeParticlesPosition('-n')">-</button>
+                <button id="craftTableAtoms-plusNeutron" onclick="changeParticlesPosition('+n')">+</button>
+            </div>
             <h4 id="craftTableAtoms-insertYourElectron">Electron :</h4>
+            <div>
+                <button id="craftTableAtoms-minusElectron" onclick="changeParticlesPosition('-e')">-</button>
+                <button id="craftTableAtoms-plusElectron" onclick="changeParticlesPosition('+e')">+</button>
+            </div>
         </div>
     </div>
     <div id="craftTableAtoms-table">
-        <button id="craftTableAtoms-table-1"></button>
-        <button id="craftTableAtoms-table-2"></button>
-        <button id="craftTableAtoms-table-3"></button>
+        <button id="craftTableAtoms-table-1">Protons : 0</button>
+        <button id="craftTableAtoms-table-2">Neutrons : 0</button>
+        <button id="craftTableAtoms-table-3">Electrons : 0</button>
     </div>
+    <button id="craftTableAtoms-button" onclick="craftAtom()">Craft !</button>
 </div>
 <link rel="stylesheet" href="css/craft.css">
