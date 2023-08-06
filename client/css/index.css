@@ -21,6 +21,7 @@ body {
   padding-left: 2vw;
   padding-right: 2vw;
   width: 15%;
+  overflow-y: auto;
 }
 
 #rightPart-particles {
@@ -33,7 +34,6 @@ body {
 }
 
 #rightPart-atoms {
-  display: none;
   margin-top: 2vh;
   width: 100%;
   background: #e0c29f;

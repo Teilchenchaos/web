@@ -69,11 +69,9 @@ function clearParticlecraftTableParticle() {
     for (let i = 1; i < 4; i++) {
         if (document.getElementById(`craftTableParticle-${i}`).innerHTML == "Up") {
             Game.particles.up--
-            document.getElementById(`craftTableParticle-${i}`).innerHTML = ""
         }
         else if (document.getElementById(`craftTableParticle-${i}`).innerHTML == "Down") {
             Game.particles.down--
-            document.getElementById(`craftTableParticle-${i}`).innerHTML = ""
         }
     }
     document.getElementById("rightPart-particles-down").innerHTML = (document.getElementById("rightPart-particles-down").innerHTML).split(":")[0] + ": " + Game.particles.down
@@ -127,4 +125,34 @@ function craftAtom() {
     let protons = parseInt(document.getElementById("craftTableAtoms-table-1").innerHTML.split(": ")[1])
     let neutrons = parseInt(document.getElementById("craftTableAtoms-table-2").innerHTML.split(": ")[1])
     let electrons = parseInt(document.getElementById("craftTableAtoms-table-3").innerHTML.split(": ")[1])
+    console.log(protons)
+    if(protons > Game.particles.proton || neutrons > Game.particles.neutron || electrons > Game.particles.electron) {
+        document.getElementById("craftTableAtoms").innerHTML += `<div class='dialog' id="dialog"><h3>You don't have enough particles.</h3><button class='dialog-button' onclick='document.getElementById("dialog").remove()'>Ok</button></div>`
+        return 0;
+    }
+    fetch("files/periodicTable.json").then(data => data.json()).then(data => {
+        for(let i=0;i<118;i++) {
+            let testProtons = data["elements"][i]["number"]
+            let testElectrons = data["elements"][i]["number"]
+            let testNeutrons = Math.round(data["elements"][i]["atomic_mass"]) - data["elements"][i]["number"]
+            console.log(data["elements"][i]["name"])
+            if(protons == testProtons && neutrons == testNeutrons && electrons == testElectrons) {
+                console.log(data["elements"][i]["number"] + " " + data["elements"][i]["name"] + " neutrons  " + testNeutrons)
+                console.log("test")
+                document.getElementById("craftTableAtoms").innerHTML += `<div class='dialog' id="dialog"><h3>You crafted an atom of ${data["elements"][i]["name"]}.</h3><button class='dialog-button' onclick='document.getElementById("dialog").remove()'>Ok</button></div>`
+                Game.particles.neutron -= neutrons
+                Game.particles.electron -= electrons
+                Game.particles.proton -= protons
+                document.getElementById("rightPart-particles-neutron").innerHTML = (document.getElementById("rightPart-particles-neutron").innerHTML).split(":")[0] + ": " + Game.particles.neutron
+                document.getElementById("rightPart-particles-proton").innerHTML = (document.getElementById("rightPart-particles-proton").innerHTML).split(":")[0] + ": " + Game.particles.proton
+                document.getElementById("rightPart-particles-electron").innerHTML = (document.getElementById("rightPart-particles-electron").innerHTML).split(":")[0] + ": " + Game.particles.electron
+                if(Game["atoms"][data["elements"][i]["name"]] == undefined) {
+                    Game["atoms"][data["elements"][i]["name"]] = 0
+                }
+                Game["atoms"][data["elements"][i]["name"]] += 1 
+                document.getElementById("rightPart-atoms-"+data["elements"][i]["name"]).innerHTML = `${data["elements"][i]["name"]} : ${Game["atoms"][data["elements"][i]["name"]]}`
+                return 0;
+            }
+        }
+    })
 }
