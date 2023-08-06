@@ -1,0 +1,74 @@
+#periodicTable-title {
+    text-align: center;
+    padding-bottom: 3vh;
+    width: 100%;
+    margin: 0;
+    margin-top: 2vh;
+}
+
+#periodicTable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vh;
+}
+
+.periodicTable-Column {
+    display: flex;
+    flex-direction: column;
+}
+
+.periodicTable-element {
+    width: 3vw;
+    height: 3vw;
+}
+
+.periodicTable-element:hover {
+    transform: scale(200%);
+    cursor: pointer;
+    box-shadow: -0.5vw 0.5vh 0.2vw 0.1vh #b6aee84f;
+}
+
+.periodicTable {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#periodicTable-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+}
+
+.periodicTable-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+#periodicTable-element-none {
+    visibility: hidden; 
+    visibility: hidden;    
+}
+
+#cancelPeriodicTableCraftButton {
+    height: 5vh;
+    width: 5vh;
+    margin-right: 1.8%;
+    margin-top: 1%;
+    border: solid;
+    border-radius: 50vh;
+    cursor: pointer;
+    font-size: 2vh;
+    background: white;
+}
+  
+#cancelPeriodicTableButton:hover {
+    background: rgba(230, 230, 230, 0.516);
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid;
+}

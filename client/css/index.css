@@ -50,6 +50,7 @@ body {
 
 #leftPart-buttons {
   margin-top: 5vh;
+  width: min-content;
 }
 
 .leftPart-button {
@@ -62,6 +63,7 @@ body {
   padding: 1.5vh;
   height: 8vh;
   width: 8vw;
+  margin: 1vh;
   cursor: pointer;
   box-shadow: -1vw 1vh 0.2vw 0.1vh #b6aee84f;
 }
