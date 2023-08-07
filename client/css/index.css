@@ -128,3 +128,11 @@ body {
   margin: 0.5vw;
   cursor: pointer;
 }
+
+#getParticles {
+  margin-top: 20px;
+  border: solid;
+  border-radius: 50px;
+  height: 150%;
+  width: 90%;
+}

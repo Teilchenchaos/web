@@ -49,7 +49,7 @@ function showCraftMenu() {
     fetch("craft.html").then(data => data.text()).then(data => {
         document.getElementById('middlePart-iframe').innerHTML = `<div id="middlePart-iframe-iframe">${data}</div>`
     })
-
+    getParticles.style.display = "none"
 }
 
 function showPeriodicTableMenu() {
@@ -57,9 +57,11 @@ function showPeriodicTableMenu() {
         document.getElementById('middlePart-iframe').innerHTML = `<div id="middlePart-iframe-iframe">${data}</div>`
         loadPeriodicTable()
     })
+    getParticles.style.display = "none"
 }
 
 
 function putIndexPage() {
     document.getElementById("middlePart-iframe").innerHTML = ""
+    getParticles.style.display = "block"
 }
