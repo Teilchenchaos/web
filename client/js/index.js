@@ -20,9 +20,9 @@ document.getElementById("rightPart-particles-proton").innerHTML = document.getEl
 document.getElementById("rightPart-particles-neutron").innerHTML = document.getElementById("rightPart-particles-neutron").innerHTML + Game.particles.neutron
 fetch("files/periodicTable.json").then(data => data.json()).then(data => {
 
-    for(let i=0;i<data["elements"].length;i++) {
+    for (let i = 0; i < data["elements"].length; i++) {
         let atomsNumberThing = 0
-        if(Game["atoms"][data["elements"][i]["name"]] != undefined) {
+        if (Game["atoms"][data["elements"][i]["name"]] != undefined) {
             atomsNumberThing = Game["atoms"][data["elements"][i]["name"]]
         }
         document.getElementById("rightPart-atoms").innerHTML += `<h3 id="rightPart-atoms-${data["elements"][i]["name"]}">${data["elements"][i]["name"]} : ${atomsNumberThing}</h3>`
@@ -43,13 +43,13 @@ loop = setInterval(() => {
         Game.particles.electron = Game.particles.electron + 1;
         document.getElementById("rightPart-particles-electron").innerHTML = (document.getElementById("rightPart-particles-electron").innerHTML).split(":")[0] + ": " + Game.particles.electron
     }
-}, 10 * 1000);
+}, 500);
 
 function showCraftMenu() {
     fetch("craft.html").then(data => data.text()).then(data => {
         document.getElementById('middlePart-iframe').innerHTML = `<div id="middlePart-iframe-iframe">${data}</div>`
     })
-    
+
 }
 
 function showPeriodicTableMenu() {
