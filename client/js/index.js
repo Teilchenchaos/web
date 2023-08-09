@@ -65,3 +65,14 @@ function putIndexPage() {
     document.getElementById("middlePart-iframe").innerHTML = ""
     getParticles.style.display = "block"
 }
+
+setInterval(() => {
+    let randomParticle = Math.floor((Math.random() * 3) + 1);
+    let randomLeftOrRight = Math.floor((Math.random() * 2) + 1);
+    if (randomLeftOrRight === 1) {
+        let randomHeight = Math.floor(Math.random() * 101);
+    }
+    if (randomLeftOrRight === 2) {
+
+    }
+}, 500)
