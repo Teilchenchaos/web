@@ -62,17 +62,20 @@ function showPeriodicTableMenu() {
 
 
 function putIndexPage() {
-    document.getElementById("middlePart-iframe").innerHTML = ""
+    document.getElementById("middlePart-iframe").innerHTML = "."
     getParticles.style.display = "block"
 }
 
 setInterval(() => {
     let randomParticle = Math.floor((Math.random() * 3) + 1);
     let randomLeftOrRight = Math.floor((Math.random() * 2) + 1);
+    let randomHeight = Math.floor(Math.random() * 101);
     if (randomLeftOrRight === 1) {
-        let randomHeight = Math.floor(Math.random() * 101);
+        document.getElementById("getParticles").innerHTML = `<p id='getParticles-particle'>O</p>`
+        document.getElementById(`getParticles-particle`).style.marginTop = randomHeight/1.3 + "vh"
+        document.getElementById(`getParticles-particle`).style.animation = "particleMovement 0.1s"        
     }
     if (randomLeftOrRight === 2) {
 
     }
-}, 500)
+}, 0.1*1000)

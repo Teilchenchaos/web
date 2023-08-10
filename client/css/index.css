@@ -133,6 +133,10 @@ body {
   margin-top: 20px;
   border: solid;
   border-radius: 50px;
-  height: 150%;
+  height: 10000vh;
   width: 90%;
+}
+
+@keyframes particleMovement {
+    100% {transform: translateX(100%);}
 }
