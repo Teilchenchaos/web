@@ -47,13 +47,13 @@ loop = setInterval(() => {
         Game.particles.gluon = Game.particles.electron + 1;
         document.getElementById("rightPart-particles-gluon").innerHTML = (document.getElementById("rightPart-particles-gluon").innerHTML).split(":")[0] + ": " + Game.particles.gluon
     }
-}, 500);
+}, 50000000);
 
 function showCraftMenu() {
     fetch("craft.html").then(data => data.text()).then(data => {
         document.getElementById('middlePart-iframe').innerHTML = `<div id="middlePart-iframe-iframe">${data}</div>`
     })
-
+    getParticles.style.display = "none"
 }
 
 function showPeriodicTableMenu() {
@@ -61,9 +61,38 @@ function showPeriodicTableMenu() {
         document.getElementById('middlePart-iframe').innerHTML = `<div id="middlePart-iframe-iframe">${data}</div>`
         loadPeriodicTable()
     })
+    getParticles.style.display = "none"
 }
 
 
 function putIndexPage() {
-    document.getElementById("middlePart-iframe").innerHTML = ""
+    document.getElementById("middlePart-iframe").innerHTML = "."
+    getParticles.style.display = "block"
+}
+
+setInterval(() => {
+    let randomParticle = Math.floor((Math.random() * 3) + 1);
+   
+    let randomThing = Math.floor((Math.random() * 3) + 1);
+    let randomHeight = Math.floor(Math.random() * 101);
+    console.log(randomThing) 
+    document.getElementById("getParticles").innerHTML = `<button id="getParticles-particle" onclick="addParticles(${randomParticle})">O</button>`
+    document.getElementById(`getParticles-particle`).style.marginTop = randomHeight/1.3+"vh"
+    document.getElementById(`getParticles-particle`).style.animation = "particleMovement"+randomThing+" 5s"
+}, 5*1000)
+
+ 
+function addParticles(particleNumber) {
+    let particle = ""
+    if(particleNumber == 1) {
+        particle = "electron"
+    } else if(particleNumber == 2) {
+        particle = "down"
+    } else {
+        particle = "up"
+    }
+    Game.particles[particle] += 1
+    document.getElementById("rightPart-particles-"+particle).innerHTML = (document.getElementById("rightPart-particles-"+particle).innerHTML).split(":")[0] + ": " + Game.particles[particle]
+    document.getElementById("getParticles-particle").remove()
+        
 }
