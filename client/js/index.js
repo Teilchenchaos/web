@@ -43,7 +43,7 @@ loop = setInterval(() => {
         Game.particles.electron = Game.particles.electron + 1;
         document.getElementById("rightPart-particles-electron").innerHTML = (document.getElementById("rightPart-particles-electron").innerHTML).split(":")[0] + ": " + Game.particles.electron
     }
-}, 500);
+}, 50000000);
 
 function showCraftMenu() {
     fetch("craft.html").then(data => data.text()).then(data => {
@@ -68,14 +68,27 @@ function putIndexPage() {
 
 setInterval(() => {
     let randomParticle = Math.floor((Math.random() * 3) + 1);
-    let randomLeftOrRight = Math.floor((Math.random() * 2) + 1);
+   
+    let randomThing = Math.floor((Math.random() * 3) + 1);
     let randomHeight = Math.floor(Math.random() * 101);
-    if (randomLeftOrRight === 1) {
-        document.getElementById("getParticles").innerHTML = `<p id='getParticles-particle'>O</p>`
-        document.getElementById(`getParticles-particle`).style.marginTop = randomHeight/1.3 + "vh"
-        document.getElementById(`getParticles-particle`).style.animation = "particleMovement 0.1s"        
-    }
-    if (randomLeftOrRight === 2) {
+    console.log(randomThing) 
+    document.getElementById("getParticles").innerHTML = `<button id="getParticles-particle" onclick="addParticles(${randomParticle})">O</button>`
+    document.getElementById(`getParticles-particle`).style.marginTop = randomHeight/1.3+"vh"
+    document.getElementById(`getParticles-particle`).style.animation = "particleMovement"+randomThing+" 5s"
+}, 5*1000)
 
+ 
+function addParticles(particleNumber) {
+    let particle = ""
+    if(particleNumber == 1) {
+        particle = "electron"
+    } else if(particleNumber == 2) {
+        particle = "down"
+    } else {
+        particle = "up"
     }
-}, 0.1*1000)
+    Game.particles[particle] += 1
+    document.getElementById("rightPart-particles-"+particle).innerHTML = (document.getElementById("rightPart-particles-"+particle).innerHTML).split(":")[0] + ": " + Game.particles[particle]
+    document.getElementById("getParticles-particle").remove()
+        
+}
