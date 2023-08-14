@@ -137,6 +137,7 @@ body {
   border-radius: 50px;
   height: 75%;
   width: 90%;
+  overflow: hidden;
 }
 
 #getParticles-particle {
@@ -151,43 +152,26 @@ body {
 }
 
 @keyframes particleMovement1 {
-  0% {margin-top: 0.2353426%;}
-  0% {margin-left: 0%;}
-  100% {margin-top: 69.123456789%;}
-  100% {margin-left: 97.75%;}
+    100% {margin-left: 100%;}
 }
 
 @keyframes particleMovement2 {
-  0% {margin-top: 0.2353426%;}
-  0% {margin-left: 0%;}
-  100% {margin-top: 69.123456789%;}
-  100% {margin-left: 97.75%;}
+  0% {margin-left: 100%;}
+  100% {margin-left: 0%;}
 }
 
 @keyframes particleMovement3 {
-  0% {margin-top: 0.2353426%;}
-  0% {margin-left: 0%;}
-  100% {margin-top: 69.123456789%;}
-  100% {margin-left: 97.75%;}
+    100% {margin-top: 100%; margin-left: 10%;}
 }
 
 @keyframes particleMovement4 {
-  0% {margin-top: 0.2353426%;}
-  0% {margin-left: 0%;}
-  100% {margin-top: 69.123456789%;}
-  100% {margin-left: 97.75%;}
+    100% {margin-top: 0%; margin-left: 60%;}
 }
 
 @keyframes particleMovement5 {
-  0% {margin-top: 0.2353426%;}
-  0% {margin-left: 0%;}
-  100% {margin-top: 69.123456789%;}
-  100% {margin-left: 97.75%;}
+    100% {margin-top: 46%; margin-left: 100%;}
 }
 
 @keyframes particleMovement6 {
-  0% {margin-top: 0.2353426%;}
-  0% {margin-left: 0%;}
-  100% {margin-top: 69.123456789%;}
-  100% {margin-left: 97.75%;}
+  100% {margin-top: 0%; margin-left: 100%;}
 }

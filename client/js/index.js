@@ -15,6 +15,7 @@ var Game = {
 
 //add the particles amounts to the screens on the right spot
 document.getElementById("rightPart-particles-up").innerHTML = document.getElementById("rightPart-particles-up").innerHTML + Game.particles.up
+document.getElementById("rightPart-particles-gluon").innerHTML = document.getElementById("rightPart-particles-gluon").innerHTML + Game.particles.gluon
 document.getElementById("rightPart-particles-down").innerHTML = document.getElementById("rightPart-particles-down").innerHTML + Game.particles.down
 document.getElementById("rightPart-particles-electron").innerHTML = document.getElementById("rightPart-particles-electron").innerHTML + Game.particles.electron
 document.getElementById("rightPart-particles-proton").innerHTML = document.getElementById("rightPart-particles-proton").innerHTML + Game.particles.proton
@@ -78,11 +79,11 @@ let particleTimeSpawn = 7
 setInterval(() => {
     const randomParticle = Math.floor((Math.random() * 4) + 1);
 
-    let randomThing = Math.floor((Math.random() * 1) + 1);
-    let randomHeight = Math.floor(Math.random() * 101);
+    let randomThing = Math.floor((Math.random() * 6) + 1);
+    let randomHeight = Math.floor(Math.random() * 50);
     console.log(randomThing)
     document.getElementById("getParticles").innerHTML = `<button id="getParticles-particle" onclick="addParticles(${randomParticle})"></button>`
-    document.getElementById(`getParticles-particle`).style.marginTop = randomHeight / 1.3 + "vh"
+    document.getElementById(`getParticles-particle`).style.marginTop = randomHeight + "%"
     document.getElementById(`getParticles-particle`).style.animation = "particleMovement" + randomThing + " " + particleTimeSpawn + "s"
 }, 7 * 1000)
 
