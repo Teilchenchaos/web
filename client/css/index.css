@@ -93,13 +93,14 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 70%
+  width: 70%;
+  height: ;
 }
 
 #middlePart-iframe {
   width: 90%;
   height: 90%;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -134,32 +135,59 @@ body {
   margin-top: 5vh;
   border: solid;
   border-radius: 50px;
-  height: 10000vh;
+  height: 75%;
   width: 90%;
 }
 
+#getParticles-particle {
+  height: 50px;
+  width: 50px;
+  border: 3px solid;
+  border-radius: 100vh;
+}
+
+#getParticles-particle:hover {
+  cursor: pointer;
+}
 
 @keyframes particleMovement1 {
-    39% {margin-top: 50vh;}
-    50% {margin-top: 40vh;}
-    70% {margin-top: 36vh;}
-    85% {margin-left: 80%;}
-    100% {margin-left: 100%;}
+  0% {margin-top: 0.2353426%;}
+  0% {margin-left: 0%;}
+  100% {margin-top: 69.123456789%;}
+  100% {margin-left: 97.75%;}
 }
 
 @keyframes particleMovement2 {
-    39% {margin-top: 20vh;}
-    50% {margin-top: 30vh;}
-    70% {margin-top: 66vh;}
-    85% {margin-left: 8%;}
-    100% {margin-left: 100%;}
+  0% {margin-top: 0.2353426%;}
+  0% {margin-left: 0%;}
+  100% {margin-top: 69.123456789%;}
+  100% {margin-left: 97.75%;}
 }
 
 @keyframes particleMovement3 {
-    0% {margin-left: 100%;}
-    39% {margin-top: 26%;}
-    50% {margin-top: 34%;}
-    70% {margin-top: 10%;}
-    85% {margin-left: 50%;}
-    100% {margin-left: -100%;}
+  0% {margin-top: 0.2353426%;}
+  0% {margin-left: 0%;}
+  100% {margin-top: 69.123456789%;}
+  100% {margin-left: 97.75%;}
+}
+
+@keyframes particleMovement4 {
+  0% {margin-top: 0.2353426%;}
+  0% {margin-left: 0%;}
+  100% {margin-top: 69.123456789%;}
+  100% {margin-left: 97.75%;}
+}
+
+@keyframes particleMovement5 {
+  0% {margin-top: 0.2353426%;}
+  0% {margin-left: 0%;}
+  100% {margin-top: 69.123456789%;}
+  100% {margin-left: 97.75%;}
+}
+
+@keyframes particleMovement6 {
+  0% {margin-top: 0.2353426%;}
+  0% {margin-left: 0%;}
+  100% {margin-top: 69.123456789%;}
+  100% {margin-left: 97.75%;}
 }

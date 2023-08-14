@@ -2,8 +2,8 @@ var Game = {
     "particles": {
         "up": 0,
         "down": 0,
-        "electron": 0,
         "gluon": 0,
+        "electron": 0,
         "proton": 0,
         "neutron": 0
     },
@@ -50,6 +50,7 @@ loop = setInterval(() => {
 }, 50000000);
 
 function showCraftMenu() {
+    document.getElementById("middlePart-iframe").style.display = "flex" 
     fetch("craft.html").then(data => data.text()).then(data => {
         document.getElementById('middlePart-iframe').innerHTML = `<div id="middlePart-iframe-iframe">${data}</div>`
     })
@@ -57,6 +58,7 @@ function showCraftMenu() {
 }
 
 function showPeriodicTableMenu() {
+    document.getElementById("middlePart-iframe").style.display = "flex" 
     fetch("periodicTable.html").then(data => data.text()).then(data => {
         document.getElementById('middlePart-iframe').innerHTML = `<div id="middlePart-iframe-iframe">${data}</div>`
         loadPeriodicTable()
@@ -66,33 +68,38 @@ function showPeriodicTableMenu() {
 
 
 function putIndexPage() {
+    document.getElementById("middlePart-iframe").style.display = "none" 
     document.getElementById("middlePart-iframe").innerHTML = "."
     getParticles.style.display = "block"
 }
 
-setInterval(() => {
-    let randomParticle = Math.floor((Math.random() * 3) + 1);
-   
-    let randomThing = Math.floor((Math.random() * 3) + 1);
-    let randomHeight = Math.floor(Math.random() * 101);
-    console.log(randomThing) 
-    document.getElementById("getParticles").innerHTML = `<button id="getParticles-particle" onclick="addParticles(${randomParticle})">O</button>`
-    document.getElementById(`getParticles-particle`).style.marginTop = randomHeight/1.3+"vh"
-    document.getElementById(`getParticles-particle`).style.animation = "particleMovement"+randomThing+" 5s"
-}, 5*1000)
+let particleTimeSpawn = 7
 
- 
+setInterval(() => {
+    const randomParticle = Math.floor((Math.random() * 4) + 1);
+
+    let randomThing = Math.floor((Math.random() * 1) + 1);
+    let randomHeight = Math.floor(Math.random() * 101);
+    console.log(randomThing)
+    document.getElementById("getParticles").innerHTML = `<button id="getParticles-particle" onclick="addParticles(${randomParticle})"></button>`
+    document.getElementById(`getParticles-particle`).style.marginTop = randomHeight / 1.3 + "vh"
+    document.getElementById(`getParticles-particle`).style.animation = "particleMovement" + randomThing + " " + particleTimeSpawn + "s"
+}, 7 * 1000)
+
+
 function addParticles(particleNumber) {
     let particle = ""
-    if(particleNumber == 1) {
+    if (particleNumber == 1) {
         particle = "electron"
-    } else if(particleNumber == 2) {
+    } else if (particleNumber == 2) {
         particle = "down"
-    } else {
+    } else if (particleNumber == 3) {
         particle = "up"
+    } else if(particleNumber == 4){
+        particle = "gluon"
     }
     Game.particles[particle] += 1
-    document.getElementById("rightPart-particles-"+particle).innerHTML = (document.getElementById("rightPart-particles-"+particle).innerHTML).split(":")[0] + ": " + Game.particles[particle]
+    document.getElementById("rightPart-particles-" + particle).innerHTML = (document.getElementById("rightPart-particles-" + particle).innerHTML).split(":")[0] + ": " + Game.particles[particle]
     document.getElementById("getParticles-particle").remove()
-        
+
 }
