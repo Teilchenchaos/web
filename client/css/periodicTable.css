@@ -72,3 +72,8 @@
     flex-direction: row;
     border-bottom: solid;
 }
+
+#atomsListAndAmountOwned {
+    margin-left: 5vw;
+    padding: 2%;
+}
