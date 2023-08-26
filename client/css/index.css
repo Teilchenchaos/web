@@ -84,7 +84,6 @@ body {
   align-items: center;
   flex-direction: column;
   width: 70%;
-  height: ;
 }
 
 #middlePart-iframe {
@@ -98,6 +97,7 @@ body {
   border: solid;
   border-radius: 5vh;
   height: 90%;
+  overflow-y: auto;
 }
 
 .dialog {

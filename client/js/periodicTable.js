@@ -34,6 +34,11 @@ function loadPeriodicTable() {
             else if(data["elements"][i]["category"] == "lanthanide") {
                 document.getElementById(`periodicTable-element-${data["elements"][i]["number"]}`).style.backgroundColor = "#fdfeff"
             }
+
+            if(Game.atoms[data["elements"][i]["name"]] != undefined) {
+                document.getElementById("atomsListAndAmountOwned").innerHTML += `<p>${data["elements"][i]["name"]} : ${Game.atoms[data["elements"][i]["name"]]}</p>`
+            }
+            
         }
     })
 }
