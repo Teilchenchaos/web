@@ -22,22 +22,12 @@ body {
   padding-left: 2vw;
   padding-right: 2vw;
   width: 15%;
-  overflow-y: auto;
 }
 
 #rightPart-particles {
   margin-top: 2vh;
   width: 100%;
   background-color: #e0c29f;
-  border-radius: 5vh;
-  padding: 1vh;
-  box-shadow: -1vw 1vh 0.2vw 0.1vh #b6aee84f;
-}
-
-#rightPart-atoms {
-  margin-top: 2vh;
-  width: 100%;
-  background: #e0c29f;
   border-radius: 5vh;
   padding: 1vh;
   box-shadow: -1vw 1vh 0.2vw 0.1vh #b6aee84f;
