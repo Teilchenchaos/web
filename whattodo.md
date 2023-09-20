@@ -2,6 +2,7 @@
 - [] see all molecules
 - [] levels for atoms
 - [] bonuses for molecules
+- [] achievements
 
 ## online
 
