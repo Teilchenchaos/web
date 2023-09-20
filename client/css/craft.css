@@ -273,3 +273,40 @@ h3 {
     background-color: #ebbeb9;
     font-size: large;
 }
+
+#craftTableMolecules {
+    display: none;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#craftTableMolecules-text {
+    text-align: center;
+    margin-top: 10%;
+    font-size: x-large;
+}
+
+#craftTableMolecules-input {
+    border-radius: 10vh;
+    border: solid black;
+    padding: 1%;
+    width: 30vw;
+    margin-top: 5vh;
+}
+
+#craftTableMolecules-button {
+    border-radius: 5vh;
+    border-style: solid;
+    background-color: #95c4de;
+    color: white;
+    font-family: ConcertOne-Regular;
+    font-size: large;
+    padding: 1.5vh;
+    height: 8vh;
+    width: 8vw;
+    cursor: pointer;
+    box-shadow: -1vw 1vh 0.2vw 0.1vh #b6aee84f;
+    margin-top: 10vh;
+}

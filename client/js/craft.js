@@ -90,7 +90,7 @@ function particlesCraftMenu() {
     document.getElementById("craftTableAtoms").style.display = "none"
 }
 function moleculesCraftMenu() {
-    document.getElementById("craftTableMolecules").style.display = "block"
+    document.getElementById("craftTableMolecules").style.display = "flex"
     document.getElementById("craftTableParticle").style.display = "none"
     document.getElementById("craftTableAtoms").style.display = "none"
 }
