@@ -79,13 +79,20 @@ function clearParticlecraftTableParticle() {
 }
 
 function atomsCraftMenu() {
-    craftTableParticle.style.display = "none"
-    craftTableAtoms.style.display = "flex"
+    document.getElementById("craftTableParticle").style.display = "none"
+    document.getElementById("craftTableMolecules").style.display = "none"
+    document.getElementById("craftTableAtoms").style.display = "flex"
 }
 
 function particlesCraftMenu() {
-    craftTableParticle.style.display = "block"
-    craftTableAtoms.style.display = "none"
+    document.getElementById("craftTableMolecules").style.display = "none"
+    document.getElementById("craftTableParticle").style.display = "block"
+    document.getElementById("craftTableAtoms").style.display = "none"
+}
+function moleculesCraftMenu() {
+    document.getElementById("craftTableMolecules").style.display = "block"
+    document.getElementById("craftTableParticle").style.display = "none"
+    document.getElementById("craftTableAtoms").style.display = "none"
 }
 
 function changeParticlesPosition(whatToChange) {
