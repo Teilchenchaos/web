@@ -162,3 +162,7 @@ function craftAtom() {
         }
     })
 }
+
+function craftMolecule() {
+    
+}

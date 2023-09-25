@@ -294,6 +294,7 @@ h3 {
     padding: 1%;
     width: 30vw;
     margin-top: 5vh;
+    outline: none;
 }
 
 #craftTableMolecules-button {
