@@ -164,5 +164,7 @@ function craftAtom() {
 }
 
 function craftMolecule() {
-    
+    fetch("files/molecules.json").then(data = data.json()).then(data => {
+
+    })
 }
