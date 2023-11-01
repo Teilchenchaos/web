@@ -1,6 +1,6 @@
 @font-face {
   font-family: ConcertOne-Regular;
-  src: url(../files/ConcertOne-Regular.ttf);
+  src: url(/web/client/files/fonts/ConcertOne-Regular.ttf);
 }
 
 body {
@@ -94,7 +94,6 @@ body {
   align-items: center;
   flex-direction: column;
   width: 70%;
-  height: ;
 }
 
 #middlePart-iframe {
@@ -150,6 +149,8 @@ body {
 #getParticles-particle:hover {
   cursor: pointer;
 }
+
+
 
 @keyframes particleMovement1 {
     100% {margin-left: 100%;}
