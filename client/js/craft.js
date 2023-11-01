@@ -150,7 +150,6 @@ function craftAtom() {
                     Game["atoms"][data["elements"][i]["name"]] = 0
                 }
                 Game["atoms"][data["elements"][i]["name"]] += 1 
-                document.getElementById("rightPart-atoms-"+data["elements"][i]["name"]).innerHTML = `${data["elements"][i]["name"]} : ${Game["atoms"][data["elements"][i]["name"]]}`
                 return 0;
             }
         }
