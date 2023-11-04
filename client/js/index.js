@@ -12,6 +12,10 @@ var Game = {
     }
 }
 
+let saveFromLocalStorage = localStorage.getItem("save")
+if(saveFromLocalStorage != null) {
+    Game = JSON.parse(saveFromLocalStorage)
+}
 
 //add the particles amounts to the screens on the right spot
 document.getElementById("rightPart-particles-up").innerHTML = document.getElementById("rightPart-particles-up").innerHTML + Game.particles.up

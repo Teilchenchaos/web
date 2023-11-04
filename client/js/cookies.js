@@ -1,7 +1,7 @@
 var cookiesConsent = getCookie("cookiesConsent")
 //add the cookies banner if the cookie "cookiesConsent" doesn't exist
 if(cookiesConsent != "v1") {
-  document.body.innerHTML = `<link rel="stylesheet" href="css/cookies.css"><div id="cookies"><h1 id="cookiesTitle">Cookies</h1><p id="cookiesText">This website uses cookies. They are used to store your save data and.</p><button id="cookies-button" onclick="acceptCookies()">OK</button></div>`
+  document.body.innerHTML = `<link rel="stylesheet" href="css/cookies.css"><div id="cookies"><h1 id="cookiesTitle">Cookies</h1><p id="cookiesText">This website uses cookies and the local storage. They are used to store your save data and.</p><button id="cookies-button" onclick="acceptCookies()">OK</button></div>`
 } 
 
 function acceptCookies() {
