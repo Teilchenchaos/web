@@ -1,6 +1,6 @@
 @font-face {
   font-family: ConcertOne-Regular;
-  src: url(/web/client/files/fonts/ConcertOne-Regular.ttf);
+  src: url(../files/fonts/ConcertOne-Regular.ttf);
 }
 
 body {
