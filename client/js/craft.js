@@ -1,3 +1,10 @@
+/*
+    TO-DO :
+
+    - add proper molecules crafting system
+    - make the gluons actually useful
+*/
+
 function insertParticle(position) {
     if (document.getElementById(`craftTableParticle-${position}`).innerHTML != "") {
         document.getElementById(`craftTableParticle-${position}`).innerHTML = ""
