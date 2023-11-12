@@ -3,7 +3,7 @@
 <nav id="craft-nav">
     <a id="craft-nav-particles" class="craft-nav" onclick="particlesCraftMenu()">Particles</a>
     <a id="craft-nav-atoms" class="craft-nav" onclick="atomsCraftMenu()">Atoms</a>
-    <a href="javascript:alert('hello')" id="craft-nav-molecules" class="craft-nav">Molecules</a>
+    <a id="craft-nav-molecules" class="craft-nav" onclick="moleculesCraftMenu()">Molecules</a>
 </nav>
 <div id="craftTableParticle">
     <button id="craftTableParticle-button" onclick="craftParticle()">Craft !</button>
@@ -38,5 +38,10 @@
         <button id="craftTableAtoms-table-3">Electrons : 0</button>
     </div>
     <button id="craftTableAtoms-button" onclick="craftAtom()">Craft !</button>
+</div>
+<div id="craftTableMolecules">
+    <h3 id="craftTableMolecules-text">Write the formula :</h3>
+    <input type="text" placeholder="H2O" id="craftTableMolecules-input">
+    <button onclick="craftMolecule()" id="craftTableMolecules-button">Craft !</button>
 </div>
 <link rel="stylesheet" href="css/craft.css">
