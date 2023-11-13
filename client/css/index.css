@@ -130,40 +130,78 @@ body {
   overflow: hidden;
 }
 
-#getParticles-particle {
+#getParticles-particle1 {
   height: 50px;
   width: 50px;
   border: 3px solid;
   border-radius: 100vh;
 }
 
-#getParticles-particle:hover {
+#getParticles-particle2 {
+  height: 50px;
+  width: 50px;
+  border: 3px solid;
+  border-radius: 100vh;
+}
+
+#getParticles-particle1:hover {
+  cursor: pointer;
+}
+
+#getParticles-particle2:hover {
   cursor: pointer;
 }
 
 
 
-@keyframes particleMovement1 {
-    100% {transform: translateX(100vw);}
+@keyframes particleMovement1_1 {
+    100% {transform: translateX(100vw);}  
 }
 
-@keyframes particleMovement2 {
+@keyframes particleMovement1_2 {
+    0% {transform: translateX(100vw);}
+    100% {transform: translateX(-100vw);}
+}
+
+@keyframes particleMovement1_3 {
+    100% {transform: translate(100vw, 50vh);}
+}
+
+@keyframes particleMovement1_4 {
+    100% {transform: translate(100vw, 10vh);}
+}
+
+@keyframes particleMovement1_5 {
+    100% {transform: translate(100vw, 40vh);}
+}
+
+@keyframes particleMovement1_6 {
+    100% {transform: translate(100vw, 100vh);}
+}
+
+
+@keyframes particleMovement2_1 {
+  100% {transform: translateX(100vw);}
+  
+}
+
+@keyframes particleMovement2_2 {
   0% {transform: translateX(100vw);}
   100% {transform: translateX(-100vw);}
 }
 
-@keyframes particleMovement3 {
-    100% {transform: translate(100vw, 50vh);}
+@keyframes particleMovement2_3 {
+  100% {transform: translate(100vw, 50vh);}
 }
 
-@keyframes particleMovement4 {
-    100% {transform: translate(100vw, 10vh);}
+@keyframes particleMovement2_4 {
+  100% {transform: translate(100vw, 10vh);}
 }
 
-@keyframes particleMovement5 {
-    100% {transform: translate(100vw, 40vh);}
+@keyframes particleMovement2_5 {
+  100% {transform: translate(100vw, 40vh);}
 }
 
-@keyframes particleMovement6 {
+@keyframes particleMovement2_6 {
   100% {transform: translate(100vw, 100vh);}
 }

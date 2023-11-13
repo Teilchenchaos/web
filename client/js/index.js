@@ -69,33 +69,67 @@ function putIndexPage() {
     getParticles.style.display = "block"
 }
 
-let particleTimeSpawn = 7
+//-------------------------------------------------------------------------------------------------------
+
+let particleTimeSpawn1 = 7
+let particleTimeSpawn2 = 5
 
 setInterval(() => {
-    const randomParticle = Math.floor((Math.random() * 4) + 1);
+    const randomParticle1 = Math.floor((Math.random() * 4) + 1);
 
-    let randomThing = Math.floor((Math.random() * 6) + 1);
-    let randomHeight = Math.floor(Math.random() * 50);
-    console.log(randomThing)
-    document.getElementById("getParticles").innerHTML = `<button id="getParticles-particle" onclick="addParticles(${randomParticle})"></button>`
-    document.getElementById(`getParticles-particle`).style.marginTop = randomHeight + "%"
-    document.getElementById(`getParticles-particle`).style.animation = "particleMovement" + randomThing + " " + particleTimeSpawn + "s"
-}, 7 * 1000)
+    let randomThing1 = Math.floor((Math.random() * 6) + 1);
+    let randomHeight1 = Math.floor(Math.random() * 50);
+    console.log(randomThing1)
+    document.getElementById("getParticles").innerHTML = `<button id="getParticles-particle1" onclick="addParticles(${randomParticle1})"></button>`
+    document.getElementById(`getParticles-particle1`).style.animationTimingFunction = "linear"
+    document.getElementById(`getParticles-particle1`).style.marginTop = randomHeight1 + "%"
+    document.getElementById(`getParticles-particle1`).style.animation = "particleMovement1_" + randomThing1 + " " + particleTimeSpawn1 + "s"
+}, 12 * 1000)
 
 
-function addParticles(particleNumber) {
-    let particle = ""
-    if (particleNumber == 1) {
-        particle = "electron"
-    } else if (particleNumber == 2) {
-        particle = "down"
-    } else if (particleNumber == 3) {
-        particle = "up"
-    } else if(particleNumber == 4){
-        particle = "gluon"
+function addParticles(particleNumber1) {
+    let particle1 = ""
+    if (particleNumber1 == 1) {
+        particle1 = "electron"
+    } else if (particleNumber1 == 2) {
+        particle1 = "down"
+    } else if (particleNumber1 == 3) {
+        particle1 = "up"
+    } else if(particleNumber1 == 4){
+        particle1 = "gluon"
     }
-    Game.particles[particle] += 1
-    document.getElementById("rightPart-particles-" + particle).innerHTML = (document.getElementById("rightPart-particles-" + particle).innerHTML).split(":")[0] + ": " + Game.particles[particle]
-    document.getElementById("getParticles-particle").remove()
+    Game.particles[particle1] += 1
+    document.getElementById("rightPart-particles-" + particle1).innerHTML = (document.getElementById("rightPart-particles-" + particle1).innerHTML).split(":")[0] + ": " + Game.particles[particle1]
+    document.getElementById("getParticles-particle1").remove()
+
+}
+
+setInterval(() => {
+    const randomParticle2 = Math.floor((Math.random() * 4) + 1);
+
+    let randomThing2 = Math.floor((Math.random() * 6) + 1);
+    let randomHeight2 = Math.floor(Math.random() * 50);
+    console.log(randomThing2)
+    document.getElementById("getParticles").innerHTML = `<button id="getParticles-particle2" onclick="addParticles(${randomParticle2})"></button>`
+    document.getElementById(`getParticles-particle2`).style.animationTimingFunction = "linear"
+    document.getElementById(`getParticles-particle2`).style.marginTop = randomHeight2 + "%"
+    document.getElementById(`getParticles-particle2`).style.animation = "particleMovement2_" + randomThing2 + " " + particleTimeSpawn2 + "s"
+}, 6 * 1000)
+
+
+function addParticles(particleNumber2) {
+    let particle2 = ""
+    if (particleNumber2 == 1) {
+        particle2 = "electron"
+    } else if (particleNumber2 == 2) {
+        particle2 = "down"
+    } else if (particleNumber2 == 3) {
+        particle2 = "up"
+    } else if(particleNumber2 == 4){
+        particle2 = "gluon"
+    }
+    Game.particles[particle2] += 1
+    document.getElementById("rightPart-particles-" + particle2).innerHTML = (document.getElementById("rightPart-particles-" + particle2).innerHTML).split(":")[0] + ": " + Game.particles[particle2]
+    document.getElementById("getParticles-particle2").remove()
 
 }
