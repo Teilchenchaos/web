@@ -46,49 +46,6 @@
 
 
 /*DON'T TOUCH THIS PART, YOU COULD MAKE IT WORSE*/
-
-#craftTableParticleGluon-1 {
-  position: absolute;
-  height: 3vh;
-  width: 3vh;
-  border-radius: 100vh;
-  transform: translateX(50%);
-  border: solid;
-  left: 42%;
-  top: 51.5%;
-  cursor: pointer;
-  background-color: rgba(3, 138, 3, 0.646);
-  font-size: large;
-}
-
-#craftTableParticleGluon-2 {
-  position: absolute;
-  height: 3vh;
-  width: 3vh;
-  border-radius: 100vh;
-  transform: translateX(50%);
-  border: solid;
-  left: 53%;
-  top: 51.5%;
-  cursor: pointer;
-  background-color: rgba(3, 138, 3, 0.646);
-  font-size: large;
-}
-
-#craftTableParticleGluon-3 {
-  position: absolute;
-  height: 3vh;
-  width: 3vh;
-  border-radius: 100vh;
-  transform: translateX(-50%);
-  border: solid;
-  left: 50%;
-  top: 62.5%;
-  cursor: pointer;
-  background-color: rgba(3, 138, 3, 0.646);
-  font-size: large;
-}
-
 #craftTableParticle-1 {
   position: absolute;
   height: 15vh;
