@@ -1,4 +1,4 @@
-# Welcome to the wiki of TeilchenChaos
+# Welcome to the wiki !
 
 ## How to use it ?
 
