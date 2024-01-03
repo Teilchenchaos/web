@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script type="module">
+        import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
+        var parseMarkdown = marked.parse
+        async function fetchWikiPage(url) {
+            
+            let result = await (await fetch(url)).text()
+            document.getElementById('content').innerHTML = parseMarkdown(result);
+        }
+        window.fetchWikiPage = fetchWikiPage
+        fetchWikiPage("md/index.md")
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="navigationBar">
+        <nav onclick="location.href='../index.html'">Bring me back to da game !</nav>
+        <nav>&nbsp</nav>
+        <nav onclick="fetchWikiPage('md/index.md')">Home</nav>
+        <nav onclick="fetchWikiPage('md/gettingStarted.md')">Getting started</nav>
+    </div>
+    <div id="content"></div>
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+        }
+        #content {
+            margin-left: 3vw;
+            border-left: solid black;
+            padding: 3%;
+        }
+        #navigationBar {
+            padding: 1.5%;
+        }
+        nav {
+            cursor: pointer;
+            font-size: large;
+        }
+    </style>
+</body>
+</html>
