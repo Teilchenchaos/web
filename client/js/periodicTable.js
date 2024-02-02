@@ -4,7 +4,8 @@ function loadPeriodicTable() {
         for(let i=0; i<data["elements"].length; i++) {
             console.log(data["elements"][i]["number"])
             document.getElementById(`periodicTable-element-${data["elements"][i]["number"]}`).innerHTML = `<p style="font-size: 0.5vw; margin-left: -2vw; margin-top: -0.1vw;">${data["elements"][i]["number"]}</p><h6 style="margin-top: 0.5vw">${data["elements"][i]["symbol"]}</h6><p style="font-size: 0.5vw; margin-top: -1vw; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">${data["elements"][i]["name"]}</p>`
-            document.getElementById(`periodicTable-element-${data["elements"][i]["number"]}`).onclick = function () { window.open("atom.html?a=" + i) }
+            let link = `atom.html?a=${i}`
+            document.getElementById(`periodicTable-element-${data["elements"][i]["number"]}`).onclick = function () { window.open(link) }
             document.getElementById(`periodicTable-element-${data["elements"][i]["number"]}`).style.borderStyle = "none"
             document.getElementById(`periodicTable-element-${data["elements"][i]["number"]}`).style.borderRadius = "7%"
             if(data["elements"][i]["category"] == "diatomic nonmetal" || data["elements"][i]["category"] == "polyatomic nonmetal") {
