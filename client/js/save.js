@@ -1,6 +1,6 @@
 setInterval(function() {
     save()
-}, 60 * 1000);
+}, 20 * 1000);
 
 function save() {
     localStorage.setItem("save", JSON.stringify(Game))
