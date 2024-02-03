@@ -135,16 +135,18 @@ body {
   width: 50px;
   border: 3px solid;
   border-radius: 100vh;
+  background-color: red;
 }
 
 #getParticles-particle:hover {
   cursor: pointer;
+  background-color: orangered;
 }
 
 
 
 @keyframes particleMovement1 {
-    100% {transform: translateX(100vw);}
+  100% {transform: translateX(100vw);}
 }
 
 @keyframes particleMovement2 {
@@ -153,15 +155,15 @@ body {
 }
 
 @keyframes particleMovement3 {
-    100% {transform: translate(100vw, 50vh);}
+  100% {transform: translate(100vw, 50vh);}
 }
 
 @keyframes particleMovement4 {
-    100% {transform: translate(100vw, 10vh);}
+  100% {transform: translate(100vw, 10vh);}
 }
 
 @keyframes particleMovement5 {
-    100% {transform: translate(100vw, 40vh);}
+  100% {transform: translate(100vw, 40vh);}
 }
 
 @keyframes particleMovement6 {
